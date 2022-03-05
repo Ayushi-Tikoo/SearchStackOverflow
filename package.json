@@ -1,0 +1,22 @@
+{
+  "name": "stackoverflowsearch",
+  "version": "1.0.0",
+  "description": "Stack overflow search interface",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "frontend": "npm start --prefix frontend",
+    "serve": "nodemon index.js",
+    "dev": "concurrently \"npm run serve\" \"npm run frontend\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.0",
+    "concurrently": "^7.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15",
+    "pg": "^8.7.3"
+  }
+}
